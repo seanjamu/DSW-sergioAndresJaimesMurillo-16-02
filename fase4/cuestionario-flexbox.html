@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario Flexbox</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/custom-fase3.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand fondo-menus" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">FASE 4</a>
+            <ul class="navbar-nav my-2">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cuestionario-flexbox.html">Cuestionario Flexbox</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header class="text-center my-2">
+        <h4>Cuestionario Flexbox</h4>
+    </header>
+    <section class="container-fluid">
+        <div class="row">
+            <nav class="col-3">
+                <div class="d-flex flex-column flex-shrink-0 p-3 fondo-menus">
+                    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <span class="fs-4">Menú lateral</span>
+                    </a>
+                    <hr class="text-white">
+                    <ul class="nav nav-underline flex-column mb-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link text-white" aria-current="page">
+                                Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="cuestionario-flexbox.html" class="nav-link text-white active" aria-current="page">
+                                Cuestionario Flexbox
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <article class="col-9">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 id="resultado">Responda las siguientes preguntas</h1>
+                        <div>
+                        <form name="formulario" autocomplete="off">
+                            <h3>1. Flexbox es</h3>
+
+                            <input type="radio" name="r1" value="a">a. Unidireccional<br>
+                            <input type="radio" name="r1" value="b">b. Bidireccional<br>
+                            <input type="radio" name="r1" value="c">c. Tridimensional<br>
+
+                            <h3>2. Cual es el valor de la propiedad "display" que establece un contenedor como flexible</h3>
+
+                            <input type="radio" name="r2" value="a">a. display<br>
+                            <input type="radio" name="r2" value="b">b. flex<br>
+                            <input type="radio" name="r2" value="c">c. block<br>
+
+                            <h3>3. Cual es la propiedad para establecer la dirección de ordenamiento</h3>
+
+                            <input type="radio" name="r3" value="a">a. flex-direction<br>
+                            <input type="radio" name="r3" value="b">b. order<br>
+                            <input type="radio" name="r3" value="c">c. css<br>
+
+                            <h3>4. Con que propiedad podemos establecer el orden de los items</h3>
+
+                            <input type="radio" name="r4" value="a">a. asc<br>
+                            <input type="radio" name="r4" value="b">b. order<br>
+                            <input type="radio" name="r4" value="c">c. flex-shrink<br>
+
+                            <h3>5. Cual es el valor de la propiedad "justify-content" que permite alinear al centro los items</h3>
+
+                            <input type="radio" name="r5" value="a">a. flex-start<br>
+                            <input type="radio" name="r5" value="b">b. space-between<br>
+                            <input type="radio" name="r5" value="c">c. center<br>
+
+                            <input type="button" value="Enviar" onclick="procesar_respuestas();">
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    <footer class="text-center">
+        <p>Desarrollado por Sergio Jaimes, Todos los derechos reservados, última actualización 2023-05-08 15:22</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
